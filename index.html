@@ -12,7 +12,7 @@
     <div class="header-text">
       <h1>julian<span class="cursor">_</span></h1>
       <div class="divider"></div>
-      <h2>jlrpc-robotics | <a href="https://www.youtube.com/@jlrpc-robotics">youtube</a> | <a href="https://github.com/jlrpc-robotics">github</a></h2>
+      <h2>jlrpc-robotics | <a href="https://www.youtube.com/@jlrpc-robotics">[youtube]</a> | <a href="https://github.com/jlrpc-robotics">[github]</a></h2>
     </div>
   </header>
   <nav>
@@ -22,35 +22,24 @@
         <span class="toggle">me</span>
         <ul>
           <li><a href="#" data-post="post1">about_me</a></li>
-          <li class="branch open">
-            <span class="toggle">knowledge_base</span>
-            <ul>
-              <li><a href="#" data-post="post2">languages</a></li>
-              <li><a href="#" data-post="post3">softwares</a></li>
-            </ul>
-          </li>
         </ul>
       </li>
       <li class="branch open">
         <span class="toggle">projects</span>
         <ul>
-          <li><a href="#" data-post="post4">humanoid_robot</a></li>
-          <li><a href="#" data-post="post5">final_year_project</a></li>
-          <li><a href="#" data-post="post6">micro_mouse</a></li>
-          <li><a href="#" data-post="post7">face_robot</a></li>
-          <li><a href="#" data-post="post8">warman_challenge</a></li>
-        </ul>
-      </li>
-      <li class="branch open">
-        <span class="toggle">games</span>
-        <ul>
-          <li><a href="#" data-post="post9">snake</a></li>
+          <li class="branch open">
+            <span class="toggle">humanoid_robot</span>
+            <ul>
+              <li><a href="#" data-post="post3">head</a></li>
+              <li><a href="#" data-post="post4">base</a></li>
+            </ul>
+          </li>
         </ul>
       </li>
       <li class="branch open">
         <span class="toggle">misc</span>
         <ul>
-          <li><a href="#" data-post="post10">friends</a></li>
+          <li><a href="#" data-post="post2">webring</a></li>
         </ul>
       </li>
     </ul>
@@ -64,106 +53,19 @@
       <p>You can use the navigation sidebar to visit my different posts and documentation. </p>
     </section>
     <section id="post2" class="blog-post">
-      <h2>languages</h2>
-      <p>Here are the different programming languages i've learnt and used, ranked from greatest understanding to weakest understanding.</p>
-      <list> 
-        <li>Python</li>
-        <li>C#, C++ and C</li>
-        <li>HTML and CSS</li>
-        <li>Xacro/URDF</li>
-      </list>
-    </section>
-    <section id="post3" class="blog-post">
-      <h2>softwares</h2>
-      <p>Here are some of the softwares I've had experience using:</p>
-      <list> 
-        <li>Autodesk Inventor</li>
-        <li>ROS2, Gazebo and Rviz</li>
-        <li>Arduino</li>
-        <li>STM32Cube</li>
-      </list>
-    </section>
-    <section id="post4" class="blog-post">
-      <h2>humanoid_robot</h2>
-      <p>WIP</p>
-    </section>
-    <section id="post5" class="blog-post">
-      <h2>final_year_project</h2>
-      <p><i>2025</i></p>
-      <p>My final year project as part of my university degree.</p>
-      <p>Project Title: Zero-Shot Navigation of a Simulated Robot using AI Computer Vision and Spacial Sensors</p>
-      <p>Project Architecture (including softwares, packages and plugins)<p>
-      <ul>
-        <li>ROS2 (Jazzy)</li>
-        <ul>
-          <li>SLAM Toolbox</li>
-          <li>Nav2</li>
-        </ul>
-        <li>Gazebo Sim (8.9.0)</li>
-        <ul>
-          <li>DiffDrive Plugin</li>
-          <li>Joint State Publisher Plugin</li>
-        </ul>
-        <li>Rviz2</li>
-        <li>AI API</li>
-      </ul>
-    </section>
-    <section id="post6" class="blog-post">
-      <h2>micro_mouse</h2>
-      <div style="display: flex;">
-        <div>
-          <p><i>2024</i></p>
-          <p>Third year of uni meant doing the micromouse competition. This competition, inspired by the worldwide Micro-mouse events, asked us to develop a small autonomous robot capable of completing a obstacle course comprised of 16x16 
-          mazes, a winding causeway and a spiral ramp. To do this, I used IR sensors, due to their ease of use and the difference in color between the </p>
-
-          <p>The microcontroller required for this project was a <a href="https://os.mbed.com/platforms/ST-Nucleo-L432KC/">Nucleo L432KC</a>, a type of small STM32 board. Similar to the Face Robot, low-level C was required here.</p>
-        </div>
-        <div>
-          <img src="images/micro_mouse.png" alt="micro_mouse"/>
-          <p><i>Artistic Depiction of the Micro Mouse Robot</i></p>
-        </div>
-      </div>
-    </section>
-    <section id="post7" class="blog-post">
-      <h2>face_robot</h2>
-      <div style="display: flex;">
-        <div>
-          <p><i>2024</i></p>
-          <p>In my second year of uni, I worked on a small robotics project for one of my classes. The goal of this project was to develop a life-sized face robot that could realistically display a few emotions through preprogrammed animations.</p>
-          <p>As such, we were required to have eyes that moved at least from side-to-side, a mouth that could open and close as well as eyebrows. These elements allowed the robot to display the required emotional animations for the rubric.</p>
-          <p>Additionally, we were allowed to develop an X-factor, an custom element that would aid the realism of the face robot. Notably for this, we were allowed to use derivative designs. 
-            For this, I chose to employ <a href="https://willcogley.notion.site/?p=fee129fa32a443749f88524f53702f5a&pm=c">Will Cogley's EyeMech Design.</a> Unlike the bare-minimum required design, this mechanism allowd for up-and-down movement as well,
-            which meant that the eyes could move in any direction, just like a real human.
-            For the Jaw, I used a single MG90s servo motor inside the bearing-suspended jaw to rotate it.
-            Two more MG90s servo motors controlled the popsicle-stick eyebrows. Together, these elements gave a suprisingly realistic face movements.</p>
-            <p>To control the robot, there were two modes. The first mode allowed the user to control the robot through a set of buttons that would display specific facial movements (happy/sad/surprised). The second mode cycled through the different emotions until 
-            its internal microphone heard a volume above a certain threshold, where it would display a suprised emotion for a few seconds before going back to cycling through the different emotions.</p>
-            <p>The Mega 2560 R3 microcontroller was programmed in low-level Arduino, and no libraries were allowed for submission.</p>
-        </div>
-        <div>
-          <img src="images/face_robot.png" alt="face_robot"/>
-          <p><i>Artistic Depiction of the Face Robot</i></p>
-        </div>
-      </div>
-    </section>
-    <section id="post8" class="blog-post">
-      <h2>warman_challenge</h2>
-      <p><i>2023</i></p>
-      <p>WIP</p>
-    </section>
-    <section id="post9" class="blog-post">
-      <h2>snake</h2>
-      <pre id="game"></pre>
-      <p>Use arrow keys to move. Avoid the walls and your own tail!</p>
-      <a href="#" id="restart-snake">[restart]</a>
-      <script src="games/snake.js"></script>
-    </section>
-    <section id="post10" class="blog-post">
       <h2>friends</h2>
       <p>Here are some of my friends websites:</p>
       <list>
         <li><a href="https://ryb0rb15.github.io/epic-ryan-website/">Ryb0</a></li>
       </list>
+    </section>
+    <section id="post3" class="blog-post">
+      <h2>humanoid_robot - head</h2>
+      <p>WIP</p>
+    </section>
+    <section id="post4" class="blog-post">
+      <h2>humanoid_robot - base</h2>
+      <p>WIP</p>
     </section>
   </main>
 
