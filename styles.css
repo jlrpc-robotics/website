@@ -146,8 +146,6 @@ main {
 
 .blog-post {
   display: none;
-  /*max-width: 00px;*/
-  /*margin: 0 auto;*/
 }
 
 .blog-post.active {
