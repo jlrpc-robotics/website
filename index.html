@@ -32,7 +32,9 @@
             <span class="toggle">humanoid_robot</span>
             <ul>
               <li><a href="#" data-post="post3">head</a></li>
-              <li><a href="#" data-post="post4">base</a></li>
+              <!--<li><a href="#" data-post="post4">base</a></li>-->
+              <li><a href="#" data-post="post6">servo_controller</a></li>
+              <!--<li><a href="#" data-post="post7">mapping</a></li>-->
             </ul>
           </li>
         </ul>
@@ -68,11 +70,13 @@
         <div style="max-width: 75%;">
           <p><i>2026-PRESENT</i></p>
           <p>I first developed the head for my humanoid robot as a way to explore the capabilities of different sensors and actuators. This involved integrating several servo motors to create a responsive and interactive head mechanism. 
-            Part of this design was inspired by the design used to create puppeted heads from the Stan Winston School of Character Arts. I wanted to create a head that could move in a lifelike manner, with the ability to express emotions and react to its environment.
+            Part of this design was inspired by the design used to create puppeted heads from the <a href="https://www.youtube.com/watch?v=xW632aigjMc">Stan Winston School of Character Arts</a>. I wanted to create a head that could move in a lifelike manner, with the ability to express emotions and react to its environment.
           </p>
           <p>
             The neck uses a stuart-platform design, which allows for a wide range of motion while maintaining stability. This design choice was crucial in enabling the head to perform complex movements without compromising its structural integrity while preserving the simplicity of the design.
             As such, the head is equipped with multiple degrees of freedom, allowing it to tilt, rotate, and nod, which adds to its realism and functionality. 
+          </p>
+          <p>
             In the middle of the head, is a single monocular eye, which is purely for aesthetic purposes, and is not currently equipped with any sensors. 
             However, I plan to add a depth camera in the chest of the robot in the future, which will allow the robot to perceive its surroundings and interact with them in a more meaningful way.
           </p>
@@ -91,6 +95,20 @@
     <section id="post5" class="blog-post" open>
       <h2>me/interests</h2>
       <p>Aside from robotics and ROS, some of my personal interests include game modding. I'm currently working on a sub-mod for the 4X strategy game Europa Universalis IV. The submod is based on the mod Anbennar, which is a fantasy overhaul mod. Once I'm done with it, all probaly post it here, so that anyone can check it out :]</p>
+    </section>
+    <section id="post6" class="blog-post" open>
+      <h2>projects/servo_controller</h2>
+      <p>To control the neck, I employed a custom servo controller built on the embedded STM32 platform.
+        This controller is designed to manage the precise movements of the servo motors in the neck, allowing for smooth and responsive motion. It does this by taking serial commands from the main control system and using inverse kinematics to determine servo angles.</p>
+      <p>The STM32F042F6P6 chip provides lightweight and efficient processing capabilities, making it well-suited for real-time control applications.
+        Though this chip has limited GPIO, it was more than enough to control the 5 servos in the neck and torso of the robot.
+      </p>
+      <img src="images/servo_controller_screenshot.png" alt="Servo Controller KiCAD Screenshot" style="max-width: 50%; height: auto";/>
+      <p>This controller was designed using KiCad, and you can find the schematics and PCB layout <a href="https://github.com/yourusername/servo-controller">here</a>.</p>
+    </section>
+    <section id="post7" class="blog-post" open>
+      <h2>projects/mapping</h2>
+      <p></p>
     </section>
   </main>
 
