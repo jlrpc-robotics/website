@@ -101,8 +101,9 @@
       <p>To control the neck, I employed a custom servo controller built on the embedded STM32 platform.
         This controller is designed to manage the precise movements of the servo motors in the neck, allowing for smooth and responsive motion. It does this by taking serial commands from the main control system and using inverse kinematics to determine servo angles.</p>
       <p>The STM32F042F6P6 chip provides lightweight and efficient processing capabilities, making it well-suited for real-time control applications.
-        Though this chip has limited GPIO, it was more than enough to control the 5 servos in the neck and torso of the robot.
+        Though this chip has limited GPIO, it was more than enough to control the 7 servos in the neck and torso of the robot.
       </p>
+      <p>I did have some issue fitting all the code (plus the libraries for Communication device class) onto the 32KB flash memory of the chip. Ultimately, through reducing heap and stack in my linker script and rewriting some of the bulkier sections like sscanf, I was able to fit the code onto the chip.</p>
       <img src="images/servo_controller_screenshot.png" alt="Servo Controller KiCAD Screenshot" style="max-width: 50%; height: auto";/>
       <p>This controller was designed using KiCad, and you can find the schematics and PCB layout <a href="https://github.com/jlrpc-robotics/neck_servo_controller">here</a>.</p>
     </section>
