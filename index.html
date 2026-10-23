@@ -32,7 +32,8 @@
             <span class="toggle">humanoid_robot</span>
             <ul>
               <li><a href="#" data-post="post3">head-neck</a></li>
-              <!--<li><a href="#" data-post="post4">base</a></li>-->
+              <li><a href="#" data-post="post4">mobile_base</a></li>
+              <!-- <li><a href="#" data-post="post7">software_stack</a></li> -->
               <!-- <li><a href="#" data-post="post6">servo_controller</a></li> -->
               <!--<li><a href="#" data-post="post7">mapping</a></li>-->
             </ul>
@@ -86,6 +87,10 @@
           </p>
           <p>[<a href="https://lnkd.in/p/ggT7N3Zy">Demo Video</a>]</p>
           <p><i>version 2 - october 2026</i></p>
+          <p>I've been working on spatial voice mapping , wake-words, face-tracking and an LLM integration for a basic conversational framework. So now, when someone says it's wake-word "Hey Computer", the robot will turn to them and wait for the request.
+            I feel that a lot of voices we see in real-life robots are too realistic. I've opted for a bitcrush and slight glitch effect to add more robot-ness.</p>
+          <p>I also did a lot of work overhauling the mechanical systems in the torso and neck. This involved redesigning the neck to allow for smaller and more powerful 12V STS3215 motors, shortening the whole neck mechanism.</p>
+          <p>Next will be adding a motorised base to make it mobile, and integrating some agentic capabilities in the LLM so that it can better understand it's surroundings. I'll also be optimising the mechanical systems in the torso and neck for smoother operation.</p>
           <p>[<a href="https://lnkd.in/p/gcjQWAnd">Demo Video</a>]</p>
         </div>
         <div style="max-width: 25%;">
@@ -95,8 +100,11 @@
       </div>
     </section>
     <section id="post4" class="blog-post">
-      <h2>projects/humanoid_robot/base</h2>
-      <p>WIP</p>
+      <h2>projects/humanoid_robot/mobile_base</h2>
+      <p><i>september 2026</i></p>
+      <p>The mobile base is a differential drive system that will allow the whole robot to navigate its environment. It also contains the main compute of the robot; the Raspberry Pi 5. 
+        It uses LiDAR, IMU and motor encoders to feed into a EKF algorithm to provide a robust localization and mapping capability using slam_toolbox.</p>
+      <p>Once the design and software is finalised, I will attach the upper body of the humanoid robot to the mobile base. Together this will create a fully functional mobile humanoid robot.</p>
     </section>
     <section id="post5" class="blog-post" open>
       <h2>me/interests</h2>
@@ -114,7 +122,8 @@
       <p>This controller was designed using KiCad, and you can find the schematics and PCB layout <a href="https://github.com/jlrpc-robotics/neck_servo_controller">here</a>.</p>
     </section>
     <section id="post7" class="blog-post" open>
-      <h2>projects/mapping</h2>
+      <h2>projects/humanoid_robot/software_stack</h2>
+      <p><i>WIP</i></p>
       <p></p>
     </section>
   </main>
